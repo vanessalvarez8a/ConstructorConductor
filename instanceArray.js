@@ -13,29 +13,30 @@ var User = function(name, email, pw){
 
 //Create an Array called 'users' that will store all our instances of User.
 
-  //code here
+var users = [];
 
+//Now create and push into your users array 3 separate instances 
+//of User using the data from above in that exact order
+var cahlan = new User("Cahlan","cahlan@devmounta.in", 'iLoveHashtags');
+var tyler = new User("Tyler","tylermcginnis33@gmail.com", 'iLoveJS');
+var lenny = new User("Lenny","lenny@theLenster.com","iLoveLentilSoup");
+users.push(cahlan, tyler, lenny);
 
-//Now create and push into your users array 3 separate instances of User using the data from above in that exact order
-
-  //code here
-
-console.log('Tyler\'s information is ');
+console.log('Tyler\'s information is ',(tyler)); //why not concatenating?
 //Console.log all of Tylers information
 
-  //code here
-
-console.log('Lenny\'s information is ');
+console.log('Lenny\'s information is ',(lenny));
 //Now console.log all of Lennys information
-
-  //code here
 
 
 //Now create another instance of User using your own information and then add that to your users array.
 
-  //code here
-
+var vanessa = new User("Vanessa", "vane@gmail.com", "ilovedogs");
+users.push(vanessa);
 console.log('All my users names are ');
 //Now loop through your users Array and console.log every users name. 
 
-  //code here
+for (var i = 0; i < users.length; i++) {
+    console.log(users[i].name); //the i is where is pointing at
+  
+}
